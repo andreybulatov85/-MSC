@@ -1,15 +1,24 @@
-p{
-  animation-duration: 3s;
-  animation-name: slidein;
-  animation-fill-mode: forwards;
+img{
+  width: 120px;
+  height: auto;
 }
-@keyframes slidein {
+
+.parrot{
+  animation-duration: 3s;
+  animation-name: fly;
+  animation-fill-mode: forwards;
+  /*animation fly 3s forwards*/
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+@keyframes fly {
 from{
-  margin-left: 0%;
-  width: 100%
+  right:0px;
+  top:0px;
 }
   to {
-    margin-left: 110%;
-    width: 300%;
+    right: 1300px;
+    top:600px;
   }
 }

@@ -7,7 +7,7 @@ img{
   animation-duration: 3s;
   animation-name: fly;
   animation-fill-mode: forwards;
-  transform: translate(0%, 100%) rotate(90deg);
+  transform: translate(0%, 100%) rotate(180deg);
   animation fly 3s forwards;
   position: absolute;
   right: 0px;
@@ -17,7 +17,7 @@ img{
 0%{
   right:0px;
   top:0px;
-  transform: rotate(0deg);
+  transform: rotate(90deg);
 }
 50%{
   right:1300px;
@@ -26,6 +26,6 @@ img{
 100% {
     right: 1300px;
     top:600px;
-    transform: rotate(180deg);
+    transform: rotate(0deg);
   }
 }

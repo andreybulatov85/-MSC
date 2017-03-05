@@ -7,18 +7,25 @@ img{
   animation-duration: 3s;
   animation-name: fly;
   animation-fill-mode: forwards;
-  /*animation fly 3s forwards*/
+  transform: translate(0%, 100%) rotate(90deg);
+  animation fly 3s forwards;
   position: absolute;
   right: 0px;
   top: 0px;
 }
 @keyframes fly {
-from{
+0%{
   right:0px;
   top:0px;
+  transform: rotate(0deg);
 }
-  to {
+50%{
+  right:1300px;
+  top: 0px;
+}
+100% {
     right: 1300px;
     top:600px;
+    transform: rotate(180deg);
   }
 }
